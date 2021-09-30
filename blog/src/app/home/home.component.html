@@ -1,0 +1,7 @@
+<p>home works!</p>
+
+<ul>
+    <li *ngFor = "let bl of blog">
+        <a [routerLink]="['/archives' , bl.year , bl.month]"> {{ bl.year  }}/ {{ bl.month}} </a>
+    </li>
+</ul>
