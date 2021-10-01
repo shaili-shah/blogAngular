@@ -17,25 +17,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot([
-      {
-        path : '',
-        component : HomeComponent
-      },
-      {
-        path : 'archives/:year/:month',
-        component : ArchivesComponent
-      },
-      {
-        path : 'archives',
-        component : ArchivesComponent
-      },
-      {
-        path : '**',
-        component : NotFoundComponent
-      }
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
