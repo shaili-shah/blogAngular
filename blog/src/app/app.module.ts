@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { ArchivesComponent } from './archives/archives.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
