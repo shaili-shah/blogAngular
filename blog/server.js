@@ -10,8 +10,8 @@ const app = express();
 const app = express();
 app.use(requireHTTPS);
 app.use(express.static('/dist/<name-on-package.json>'));
-app.listen(process.env.PORT || 8080);
-
-app.listen(port, () => {
-    console.log(`Listening on http://localhost:${port}/`);
+app.get('/*', function(req, res) {
+    res.sendFile('index.html', {root: 'dist/<name-on-package.json>/'}
+  );
   });
+app.listen(process.env.PORT || 8080);
